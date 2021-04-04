@@ -33,12 +33,12 @@ class _HomeState extends State<Home> {
       var allCountries = _document.findAllElements('m:tCountryCodeAndName');
 //          .map<xml.XmlElement>((e) => Text(e.findAllElements('m:sName').first.text))
 //          .toList();
-      var allCountriesPlus = allCountries.map((e) => Country(e.findElements('m:sName').first.text,
-          e.findElements('m:sISOCode').first.text, '', '',
-          '')).toList();
-    countries = allCountriesPlus;
+      var allCountriesPlus = allCountries
+          .map((e) => Country(e.findElements('m:sName').first.text,
+              e.findElements('m:sISOCode').first.text, '', '', ''))
+          .toList();
+      countries = allCountriesPlus;
     });
-
 
     items = _document.findAllElements('m:ListOfCountryNamesByNameResult');
     List<dynamic> itemsList = [];
@@ -117,8 +117,8 @@ class _HomeState extends State<Home> {
             SizedBox(
               height: 10,
             ),
-            CustomButton('Country Info', Theme.of(context).primaryColor, 15,
-                15, Colors.white, () {
+            CustomButton('Country Info', Theme.of(context).primaryColor, 15, 15,
+                Colors.white, () {
 //                fetchSelectedCountry('ET');
             }),
             parsedXml != null
@@ -166,10 +166,11 @@ class _HomeState extends State<Home> {
                               style: TextStyle(fontSize: 14.0),
                             ),
                             Chip(
-                                label: Text('+'+parsedXml
-                                        .findAllElements('m:sPhoneCode')
-                                        .first
-                                        .text ??
+                                label: Text('+' +
+                                        parsedXml
+                                            .findAllElements('m:sPhoneCode')
+                                            .first
+                                            .text ??
                                     '')),
                           ],
                         ),
@@ -246,7 +247,7 @@ class _HomeState extends State<Home> {
                                       .findAllElements('m:sCountryFlag')
                                       .first
                                       .text ??
-                                   ''),
+                                  ''),
                             ),
                           ],
                         ),
@@ -290,8 +291,13 @@ class _HomeState extends State<Home> {
     await http
         .post(url,
             headers: {
+              "SOAPAction":
+              "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso",
               "Content-Type": "text/xml;charset=UTF-8",
-              "cache-control": "no-cache"
+              "cache-control": "no-cache",
+              //If Bearer authorization
+              "Authorization": "Basic bWVzdHJlOnRvdHZz",
+              "Connection": "keep-alive"
             },
             body: utf8.encode(envelope),
             encoding: Encoding.getByName("UTF-8"))
@@ -316,9 +322,12 @@ class _HomeState extends State<Home> {
         .post(url,
             headers: {
               "SOAPAction":
-                  "http://www.totvs.com/IwsConsultaSQL/RealizarConsultaSQL",
+                  "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso",
               "Content-Type": "text/xml;charset=UTF-8",
-              "cache-control": "no-cache"
+              "cache-control": "no-cache",
+              //If Bearer authorization
+              "Authorization": "Basic bWVzdHJlOnRvdHZz",
+              "Connection": "keep-alive"
             },
             body: utf8.encode(envelope),
             encoding: Encoding.getByName("UTF-8"))
