@@ -3,12 +3,7 @@
 A new Flutter application.
 
 ## Getting Started
-![Screenshot 1](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-1.jpg)
-![Screenshot 2](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-2.jpg)
-![Screenshot 3](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-3.jpg)
-![Screenshot 4](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-4.jpg)
-![Screenshot 5](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-5.jpg)
-![Screenshot 6](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-6.jpg)
+<img src="https://github.com/Dawith305/flutter-soap-api/blob/main/sc-1.jpg" width="310" height="610"> <img src="https://github.com/Dawith305/flutter-soap-api/blob/main/sc-2.jpg" width="310" height="610"> <img src="https://github.com/Dawith305/flutter-soap-api/blob/main/sc-3.jpg" width="310" height="610"> <img src="https://github.com/Dawith305/flutter-soap-api/blob/main/sc-4.jpg" width="310" height="610"> <img src="https://github.com/Dawith305/flutter-soap-api/blob/main/sc-5.jpg" width="310" height="610"> <img src="https://github.com/Dawith305/flutter-soap-api/blob/main/sc-6.jpg" width="310" height="610">
 
 This project is a starting point for a Flutter application.
 
