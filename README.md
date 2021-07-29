@@ -3,6 +3,12 @@
 A new Flutter application.
 
 ## Getting Started
+[Screenshot 1](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-1.jpg)
+[Screenshot 2](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-2.jpg)
+[Screenshot 3](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-3.jpg)
+[Screenshot 4](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-4.jpg)
+[Screenshot 5](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-5.jpg)
+[Screenshot 6](https://github.com/Dawith305/flutter-soap-api/blob/main/sc-6.jpg)
 
 This project is a starting point for a Flutter application.
 
